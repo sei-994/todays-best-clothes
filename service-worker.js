@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.81fb8805265789c46efc42ddc09eb161.js"
+  "/precache-manifest.315007a56c2652a64a30e43a0916cea0.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "todays-best-clothes"});
