@@ -1,16 +1,27 @@
 <template>
-  <h1>home</h1>
+  <!-- :weather-number="weatherIndex" -->
+  <div class="weather__container contents__box">
+    <Weather />
+    <WeeksWeather />
+  </div>
 </template>
 
 <script>
+import Weather from "../components/Weather.vue";
+import WeeksWeather from "../components/WeeksWeather.vue";
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
+  components: {
+    Weather,
+    WeeksWeather,
+  },
   data() {
     return {};
   },
+
   created() {
     const options = {
       method: "GET",
@@ -45,3 +56,10 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+.weather__container {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+</style>

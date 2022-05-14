@@ -3,9 +3,9 @@
     <img src="../../public/img/icons/header_logo.png" alt="ロゴimg" />
     <nav>
       <ul>
-        <li>About</li>
-        <li>Today's Weather</li>
-        <li>Today's best clothes</li>
+        <li><a to="/about">About</a></li>
+        <li><a to=""> Today's Weather</a></li>
+        <li><a to=""> Today's best clothes</a></li>
       </ul>
     </nav>
   </header>
