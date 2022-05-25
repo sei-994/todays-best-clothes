@@ -55,7 +55,7 @@ export default {
         m.day = m.day.substring(5).replace("-", "/"); //日付の処理
         if (Number(m.weather) < 233) {
           //sunder
-          m.weather = "../../public/img/thunder.png";
+          m.weather = require("../../public/img/thunder.png");
         } else if (Number(m.weather) < 322) {
           m.weather = require("../../public/img/weeks-weather-icon/rain-icon.png"); //雨
         } else if (Number(m.weather) < 505) {
