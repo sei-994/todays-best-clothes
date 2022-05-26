@@ -1,12 +1,25 @@
 <template>
-  <div id="nav">
+  <Header></Header>
+
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
   <router-view />
+
+  <footer></footer>
 </template>
 
-<style>
+<script>
+import Header from "./components/Header.vue";
+
+export default {
+  components: {
+    Header,
+  },
+};
+</script>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,5 +39,14 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+footer {
+  height: 10rem;
+  background: rgb(255, 255, 255);
+}
+// 共通クラス
+.contents__box {
+  margin: 0 8%;
 }
 </style>
