@@ -38,7 +38,7 @@ export default {
     weatherImage() {
       if (this.weatherNumber == "Clear") {
         return "/img/sun.png"; //晴れ
-      } else if (this.weatherNumber == "Cloud") {
+      } else if (this.weatherNumber == "Clouds") {
         return "/img/nuage.png"; //曇り
       } else if (this.weatherNumber == "Drizzle") {
         return "/img/rain.png"; //曇り
